@@ -1,0 +1,37 @@
+@import "../vendor/normalize.css";
+@import "../fonts/fonts.css";
+
+@import "../blocks/page/page.css";
+@import "../blocks/page-content/page-content.css";
+
+@import "../blocks/header/header.css";
+@import "../blocks/header/__logo/header__logo.css";
+@import "../blocks/header/__line/header__line.css";
+
+@import "../blocks/profile-head/profile-head.css";
+@import "../blocks/profile-head/__avatar/profile-head__avatar.css";
+@import "../blocks/profile-head/__info/profile-head__info.css";
+@import "../blocks/profile-head/__name/profile-head__name.css";
+@import "../blocks/profile-head/__bio/profile-head__bio.css";
+@import "../blocks/profile-head/__edit-button/profile-head__edit-button.css";
+@import "../blocks/profile-head/__add-button/profile-head__add-button.css";
+
+@import "../blocks/profile-feed/profile-feed.css";
+@import "../blocks/profile-feed/__item/profile-feed__item.css";
+@import "../blocks/profile-feed/__picture/profile-feed__picture.css";
+@import "../blocks/profile-feed/__decription/profile-feed__decription.css";
+@import "../blocks/profile-feed/__name/profile-feed__name.css";
+@import "../blocks/profile-feed/__like-button/profile-feed__like-button.css";
+
+@import "../blocks/footer/footer.css";
+@import "../blocks/footer/__copyright/footer__copyright.css";
+
+@import "../popup/popup.css";
+@import "../popup/_fade/popup_fade.css";
+@import "../popup/__container/popup__container.css";
+@import "../popup/__close/popup__close.css";
+@import "../popup/__title/popup__title.css";
+@import "../popup/__input/popup__input.css";
+@import "../popup/__container-line/popup__container-line.css";
+@import "../popup/__save-button/popup__save-button.css";
+@import "../popup/_opened/popup_opened.css";

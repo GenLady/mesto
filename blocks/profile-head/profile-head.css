@@ -1,0 +1,25 @@
+.profile-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 51px;
+}
+
+/*@media screen and (max-width: 750px) {
+  .profile-head {
+    margin: 0 30px 43px;
+  }
+}*/
+
+@media screen and (max-width: 710px) {
+  .profile-head {
+    margin: 0 30px 43px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile-head {
+    flex-direction: column;
+    margin-bottom: 36px;
+  }
+}

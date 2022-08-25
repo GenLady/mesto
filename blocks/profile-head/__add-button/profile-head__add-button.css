@@ -1,0 +1,34 @@
+.profile-head__add-button {
+  border: 2px solid #fff;
+  border-radius: 2px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #000;
+  background-image: url(../../../images/add-button.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 237px;
+  align-self: center;
+  padding: 0;
+  margin-left: auto;
+}
+
+.profile-head__add-button:hover {
+  opacity: .6;
+  transition: opacity .2s linear;
+}
+
+@media screen and (max-width: 920px) {
+  .profile-head__add-button {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile-head__add-button {
+    min-width: 282px;
+    background-size: 16px;
+    margin: 0;
+  }
+}

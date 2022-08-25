@@ -1,0 +1,21 @@
+.page-content {
+  background-color: #000;
+  color: #fff;
+  max-width: calc(1280px - 400px);
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media screen and (max-width: 920px) {
+  .page-content {
+    max-width: calc(920px - 250px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page-content {
+    max-width: 320px;
+  }
+}

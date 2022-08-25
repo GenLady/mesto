@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywrds" content="">
+    <meta name="author" content="Анна Иванова">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Mesto</title>
+  </head>
+  <body class="page page-content">
+    <header class="header">
+      <img src="./images/logo-mesto.png" alt="логотип" class="header__logo">
+      <div class="header__line"></div>
+    </header>
+
+    <main>
+      <section class="profile-head">
+        <img src="./images/jak-iv-kusto.jpg" alt="фото профиля" class="profile-head__avatar">
+        <div class="profile-head__info">
+          <h1 class="profile-head__name">Жак-Ив Кусто</h1>
+          <h2 class="profile-head__bio">Исследователь океана</h2>
+          <button type="button" class="profile-head__edit-button profile-head__edit-button_open-popup"></button>
+        </div>
+        <button class="profile-head__add-button"></button>
+      </section>
+
+      <section class="profile-feed">
+        <div class="profile-feed__item">
+          <img src="./images/karachaevsk.jpg" alt="пейзаж" class="profile-feed__picture">
+          <div class="profile-feed__decription">
+            <h2 class="profile-feed__name">Карачаевск</h2>
+            <button type="button" class="profile-feed__like-button"></button>
+          </div>
+        </div>
+        <div class="profile-feed__item">
+          <img src="./images/elbruse-mount.png" alt="пейзаж" class="profile-feed__picture">
+          <div class="profile-feed__decription">
+            <h2 class="profile-feed__name">Гора Эльбрус</h2>
+            <button type="button" class="profile-feed__like-button"></button>
+          </div>
+        </div>
+        <div class="profile-feed__item">
+          <img src="./images/dombay.png" alt="пейзаж" class="profile-feed__picture">
+          <div class="profile-feed__decription">
+            <h2 class="profile-feed__name">Домбай</h2>
+            <button type="button" class="profile-feed__like-button"></button>
+          </div>
+        </div>
+        <div class="profile-feed__item">
+          <img src="./images/elbruse-mount.png" alt="пейзаж" class="profile-feed__picture">
+          <div class="profile-feed__decription">
+            <h2 class="profile-feed__name">Гора Эльбрус</h2>
+            <button type="button" class="profile-feed__like-button"></button>
+          </div>
+        </div>
+        <div class="profile-feed__item">
+          <img src="./images/karachaevsk.jpg" alt="пейзаж" class="profile-feed__picture">
+          <div class="profile-feed__decription">
+            <h2 class="profile-feed__name">Карачаево-Черкесия</h2>
+            <button type="button" class="profile-feed__like-button"></button>
+          </div>
+        </div>
+        <div class="profile-feed__item">
+          <img src="./images/dombay.png" alt="пейзаж" class="profile-feed__picture">
+          <div class="profile-feed__decription">
+            <h2 class="profile-feed__name">Домбай</h2>
+            <button type="button" class="profile-feed__like-button"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
+    </footer>
+
+    <section class="popup">
+      <div class="popup_fade">
+        <div class="popup__container">
+          <img src="./images/popup-close.svg" alt="кнопка закрытия" class="popup__close">
+          <h2 class="popup__title">Редактировать профиль</h2>
+          <form class="popup__form">
+            <input type="text" value="" class="popup__input popup__input-name">
+            <div class="popup__container-line"></div>
+            <input type="text" value="" class="popup__input popup__input-bio">
+            <div class="popup__container-line"></div>
+            <button type="submit" class="popup__save-button">Сохранить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
+

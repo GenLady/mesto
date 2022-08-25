@@ -1,0 +1,13 @@
+.popup_fade::before {
+    content: '';
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+}

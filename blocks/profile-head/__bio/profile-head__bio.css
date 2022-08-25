@@ -1,0 +1,29 @@
+.profile-head__bio {
+  grid-area: biograthy;
+  margin: 0;
+  padding-top: 7px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 920px) {
+  .profile-head__bio {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile-head__bio {
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .profile-head__bio {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+

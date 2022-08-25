@@ -1,0 +1,19 @@
+.profile-feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  grid-template-rows: auto;
+  gap: 20px 17px;
+}
+
+@media screen and (max-width: 710px) {
+  .profile-feed {
+    margin: 0 19px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile-feed {
+    gap: 20px;
+
+  }
+}

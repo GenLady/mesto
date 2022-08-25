@@ -1,0 +1,22 @@
+.profile-feed__like-button {
+  border: none;
+  width: 22px;
+  height: 19px;
+  cursor: pointer;
+  background-color: #fff;
+  background-image: url(../../../images/like-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
+  margin: 0 5px;
+  padding: 0;
+}
+
+.profile-feed__like-button:active {
+  background-image: url(../../../images/like-button-active.svg);
+}
+
+.profile-feed__like-button:hover {
+  transition: opacity .2s linear;
+  opacity: 0.5;
+}
