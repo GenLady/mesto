@@ -1,8 +1,9 @@
 .profile-head__edit-button {
+  grid-area: edit-button;
   border: 1px solid #fff;
-  width: 24px;
-  height: 24px;
-  margin-bottom: 25px;
+  min-width: 24px;
+  min-height: 24px;
+  margin-left: 18px;
   padding: 0;
   cursor: pointer;
   background-color: #000;
@@ -19,19 +20,14 @@
 
 @media screen and (max-width: 600px) {
   .profile-head__edit-button{
-    position: relative;
-    left: 126px;
-    top: -90px;
-    margin-bottom: -18px;
+    margin-left: 10px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .profile-head__edit-button{
-    left: 113px;
-    top: -82px;
-    width: 18px;
-    height: 18px;
+    min-width: 18px;
+    min-height: 18px;
   }
 }
 

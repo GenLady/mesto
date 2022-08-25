@@ -1,9 +1,8 @@
 .profile-head__info {
-  position: static;
   display: grid;
   grid-template-areas:
-  "name"
-  "biograthy";
+  "name edit-button"
+  "biograthy .";
   grid-template-columns: 1fr auto;
   grid-template-rows: min-content min-content;
   align-content: center;
