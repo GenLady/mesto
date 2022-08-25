@@ -17,7 +17,7 @@
 @import "../blocks/profile-head/__add-button/profile-head__add-button.css";
 
 @import "../blocks/profile-feed/profile-feed.css";
-@import "../blocks/profile-feed/__list/profile-feed_list.css";
+@import "../blocks/profile-feed/__list/profile-feed__list.css";
 @import "../blocks/profile-feed/__item/profile-feed__item.css";
 @import "../blocks/profile-feed/__picture/profile-feed__picture.css";
 @import "../blocks/profile-feed/__decription/profile-feed__decription.css";

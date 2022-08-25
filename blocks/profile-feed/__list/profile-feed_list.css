@@ -1,4 +1,4 @@
-.profile-feed_list {
+.profile-feed__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
   gap: 20px 17px;
@@ -8,13 +8,13 @@
 }
 
 @media screen and (max-width: 710px) {
-  .profile-feed_list {
+  .profile-feed__list {
     margin: 0 19px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .profile-feed_list {
+  .profile-feed__list {
     gap: 20px;
   }
 }
