@@ -1,28 +1,17 @@
 .profile-head__info {
+  position: static;
   display: grid;
   grid-template-areas:
-  "name edit-button"
-  "biograthy .";
+  "name"
+  "biograthy";
   grid-template-columns: 1fr auto;
   grid-template-rows: min-content min-content;
   align-content: center;
   padding: 0;
-  margin-right: 30px;
-}
-
-@media screen and (max-width: 920px) {
-  .profile-head__info {
-    grid-template-columns: max-content auto;
-  }
+  margin-right: 18px;
 }
 
 @media screen and (max-width: 600px) {
-  .profile-head__info {
-    margin: 27px auto 36px;
-  }
-}
-
-@media screen and (max-width: 320px) {
   .profile-head__info {
     margin: 27px auto 36px;
   }

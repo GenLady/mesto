@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywrds" content="">
+    <meta name="description" content="Онлайн-платформа для фотографий. Вы можете создать аккаунт, загрузить фото, лайкнуть фото друзей">
+    <meta name="keywords" content="выложить фото, создать портфолио, профиль, аккаунт, лента фотографий">
     <meta name="author" content="Анна Иванова">
     <link rel="stylesheet" href="./pages/index.css">
     <title>Mesto</title>
@@ -16,59 +16,63 @@
     </header>
 
     <main>
-      <section class="profile-head">
-        <img src="./images/jak-iv-kusto.jpg" alt="фото профиля" class="profile-head__avatar">
+      <section aria-label="Профиль" class="profile-head">
+        <img src="./images/profile-photo.jpg" alt="фото профиля" class="profile-head__avatar">
         <div class="profile-head__info">
-          <h1 class="profile-head__name">Жак-Ив Кусто</h1>
-          <h2 class="profile-head__bio">Исследователь океана</h2>
-          <button type="button" class="profile-head__edit-button profile-head__edit-button_open-popup"></button>
+          <h1 class="profile-head__title">Walter White</h1>
+          <h2 class="profile-head__bio">Chemistry professor, teacher</h2>
         </div>
-        <button class="profile-head__add-button"></button>
+        <button type="button" aria-label="Редактировать" class="profile-head__edit-button profile-head__edit-button_open-popup"></button>
+        <button type="button" aria-label="Добавить" class="profile-head__add-button"></button>
       </section>
 
-      <section class="profile-feed">
-        <div class="profile-feed__item">
-          <img src="./images/karachaevsk.jpg" alt="пейзаж" class="profile-feed__picture">
-          <div class="profile-feed__decription">
-            <h2 class="profile-feed__name">Карачаевск</h2>
-            <button type="button" class="profile-feed__like-button"></button>
-          </div>
-        </div>
-        <div class="profile-feed__item">
-          <img src="./images/elbruse-mount.png" alt="пейзаж" class="profile-feed__picture">
-          <div class="profile-feed__decription">
-            <h2 class="profile-feed__name">Гора Эльбрус</h2>
-            <button type="button" class="profile-feed__like-button"></button>
-          </div>
-        </div>
-        <div class="profile-feed__item">
-          <img src="./images/dombay.png" alt="пейзаж" class="profile-feed__picture">
-          <div class="profile-feed__decription">
-            <h2 class="profile-feed__name">Домбай</h2>
-            <button type="button" class="profile-feed__like-button"></button>
-          </div>
-        </div>
-        <div class="profile-feed__item">
-          <img src="./images/elbruse-mount.png" alt="пейзаж" class="profile-feed__picture">
-          <div class="profile-feed__decription">
-            <h2 class="profile-feed__name">Гора Эльбрус</h2>
-            <button type="button" class="profile-feed__like-button"></button>
-          </div>
-        </div>
-        <div class="profile-feed__item">
-          <img src="./images/karachaevsk.jpg" alt="пейзаж" class="profile-feed__picture">
-          <div class="profile-feed__decription">
-            <h2 class="profile-feed__name">Карачаево-Черкесия</h2>
-            <button type="button" class="profile-feed__like-button"></button>
-          </div>
-        </div>
-        <div class="profile-feed__item">
-          <img src="./images/dombay.png" alt="пейзаж" class="profile-feed__picture">
-          <div class="profile-feed__decription">
-            <h2 class="profile-feed__name">Домбай</h2>
-            <button type="button" class="profile-feed__like-button"></button>
-          </div>
-        </div>
+      <section aria-label="Публикации профиля" class="profile-feed">
+        <article>
+          <ul class="profile-feed_list">
+            <li class="profile-feed__item">
+              <img src="./images/albuquerque.jpg" alt="Альбукерке" class="profile-feed__picture">
+              <div class="profile-feed__decription">
+                <h2 class="profile-feed__name">Albuquerque</h2>
+                <button type="button" aria-label="Лайк" class="profile-feed__like-button"></button>
+              </div>
+            </li>
+            <li class="profile-feed__item">
+              <img src="./images/flask-with-liquid.jpg" alt="бутыль с жидкостью" class="profile-feed__picture">
+              <div class="profile-feed__decription">
+                <h2 class="profile-feed__name">On working</h2>
+                <button type="button" aria-label="Лайк" class="profile-feed__like-button"></button>
+              </div>
+            </li>
+            <li class="profile-feed__item">
+              <img src="./images/boat.jpg" alt="катер" class="profile-feed__picture">
+              <div class="profile-feed__decription">
+                <h2 class="profile-feed__name">My merch</h2>
+                <button type="button" aria-label="Лайк" class="profile-feed__like-button"></button>
+              </div>
+            </li>
+            <li class="profile-feed__item">
+              <img src="./images/krystal.jpg" alt="кристал" class="profile-feed__picture">
+              <div class="profile-feed__decription">
+                <h2 class="profile-feed__name">New formula</h2>
+                <button type="button" aria-label="Лайк" class="profile-feed__like-button"></button>
+              </div>
+            </li>
+            <li class="profile-feed__item">
+              <img src="./images/desert-road.jpg" alt="дорога в пустыне" class="profile-feed__picture">
+              <div class="profile-feed__decription">
+                <h2 class="profile-feed__name">On the way</h2>
+                <button type="button" aria-label="Лайк" class="profile-feed__like-button"></button>
+              </div>
+            </li>
+            <li class="profile-feed__item">
+              <img src="./images/track-in-desert.jpg" alt="дом на колёсах в пустыне" class="profile-feed__picture">
+              <div class="profile-feed__decription">
+                <h2 class="profile-feed__name">Calm place</h2>
+                <button type="button" aria-label="Лайк" class="profile-feed__like-button"></button>
+              </div>
+            </li>
+          </ul>
+        </article>
       </section>
     </main>
 
@@ -76,21 +80,19 @@
       <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
     </footer>
 
-    <section class="popup">
+    <div class="popup">
       <div class="popup__fade">
+        <button type="button" aria-label="Закрыть" class="popup__close"></button>
         <div class="popup__container">
-          <img src="./images/popup-close.svg" alt="кнопка закрытия" class="popup__close">
           <h2 class="popup__title">Редактировать профиль</h2>
           <form class="popup__form">
             <input type="text" value="" class="popup__input popup__input-name">
-            <div class="popup__container-line"></div>
             <input type="text" value="" class="popup__input popup__input-bio">
-            <div class="popup__container-line"></div>
-            <button type="submit" class="popup__save-button">Сохранить</button>
+            <button type="submit" aria-label="Сохранить" class="popup__save-button">Сохранить</button>
           </form>
         </div>
       </div>
-    </section>
+    </div>
 
     <script src="./scripts/index.js"></script>
   </body>

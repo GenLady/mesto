@@ -5,15 +5,9 @@
   margin-bottom: 51px;
 }
 
-/*@media screen and (max-width: 750px) {
-  .profile-head {
-    margin: 0 30px 43px;
-  }
-}*/
-
 @media screen and (max-width: 710px) {
   .profile-head {
-    margin: 0 30px 43px;
+    margin: 43px 19px;
   }
 }
 

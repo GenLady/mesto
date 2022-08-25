@@ -5,6 +5,10 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 @media screen and (max-width: 920px) {
@@ -19,11 +23,9 @@
   }
 }
 
-
 @media screen and (max-width: 320px) {
   .profile-head__bio {
     font-size: 14px;
-    text-align: center;
   }
 }
 

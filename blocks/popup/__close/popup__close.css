@@ -1,9 +1,16 @@
 .popup__close {
-  max-width: 32px;
-  position: absolute;
-  top: calc(-32px - 8px);
-  left: 438px;
+  background-image: url(../../../../images/closeicon.svg);
+  background-color: #000;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  border: none;
   cursor: pointer;
+  padding: 0;
+  position: relative;
+  top: -8px;
+  left: 438px;
 }
 
 .popup__close:hover {
@@ -13,7 +20,9 @@
 
 @media screen and (max-width: 600px) {
   .popup__close {
-    max-width: 20px;
-    left: calc(282px - 16px);
+    width: 20px;
+    height: 20px;
+    left: 263px;
+    top: -16px;
   }
 }

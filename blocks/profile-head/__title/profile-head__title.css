@@ -1,25 +1,23 @@
-.profile-head__name {
+.profile-head__title {
   grid-area: name;
   margin: 0;
   font-weight: 500;
   font-size: 42px;
   line-height: 1.1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 @media screen and (max-width: 920px) {
-  .profile-head__name {
+  .profile-head__title {
     font-size: 35px;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .profile-head__name {
-    font-size: 30px;
-  }
-}
-
 @media screen and (max-width: 320px) {
-  .profile-head__name {
+  .profile-head__title {
     font-size: 27px;
   }
 }
