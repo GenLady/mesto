@@ -27,7 +27,7 @@
 @import "../blocks/footer/__copyright/footer__copyright.css";
 
 @import "../blocks/popup/popup.css";
-@import "../blocks/popup/_fade/popup_fade.css";
+@import "../blocks/popup/__fade/popup__fade.css";
 @import "../blocks//popup/__container/popup__container.css";
 @import "../blocks//popup/__close/popup__close.css";
 @import "../blocks//popup/__title/popup__title.css";

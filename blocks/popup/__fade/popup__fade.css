@@ -1,4 +1,4 @@
-.popup_fade::before {
+.popup__fade::before {
     content: '';
     background: #000;
     position: fixed;
