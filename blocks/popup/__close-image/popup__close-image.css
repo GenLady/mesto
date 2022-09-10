@@ -4,9 +4,12 @@
   margin-right: -41px;
   position: unset;
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 600px) {
   .popup__close-image {
     margin-right: 0;
   }
 }
+=======
+>>>>>>> c6bd0b06d3148ebbfdb01d44aec657bbff2c2a3c
