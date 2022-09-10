@@ -12,10 +12,6 @@
   padding: 0;
 }
 
-.profile-feed__like-button:active {
-  background-image: url(../../../images/like-button-active.svg);
-}
-
 .profile-feed__like-button:hover {
   transition: opacity .2s linear;
   opacity: 0.5;

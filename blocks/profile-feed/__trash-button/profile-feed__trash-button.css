@@ -1,0 +1,22 @@
+.profile-feed__trash-button {
+  background-image: url(../../../images/trash-button.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  width: 18px;
+  height: 19px;
+  cursor: pointer;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 20px;
+  top: 20px;
+}
+
+.profile-feed__trash-button:hover {
+  opacity: .6;
+  transition: opacity .2s linear;
+}
+

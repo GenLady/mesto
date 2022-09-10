@@ -23,6 +23,8 @@
 @import "../blocks/profile-feed/__decription/profile-feed__decription.css";
 @import "../blocks/profile-feed/__name/profile-feed__name.css";
 @import "../blocks/profile-feed/__like-button/profile-feed__like-button.css";
+@import "../blocks/profile-feed/__like-button/_active/profile-feed__like-button_active.css";
+@import "../blocks/profile-feed/__trash-button/profile-feed__trash-button.css";
 
 @import "../blocks/footer/footer.css";
 @import "../blocks/footer/__copyright/footer__copyright.css";
@@ -35,3 +37,7 @@
 @import "../blocks//popup/__input/popup__input.css";
 @import "../blocks//popup/__save-button/popup__save-button.css";
 @import "../blocks//popup/_opened/popup_opened.css";
+@import "../blocks/popup/__figure-container/popup__figure-container.css";
+@import "../blocks/popup/__close-image/popup__close-image.css";
+@import "../blocks/popup/__image/popup__image.css";
+@import "../blocks/popup/__image-title/popup__image-title.css";

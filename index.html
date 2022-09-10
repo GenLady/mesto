@@ -10,101 +10,83 @@
     <title>Mesto</title>
   </head>
   <body class="page page-content">
+
     <header class="header">
       <img src="./images/logo-mesto.png" alt="логотип" class="header__logo">
       <div class="header__line"></div>
     </header>
-
     <main>
       <section aria-label="Профиль" class="profile-head">
         <img src="./images/profile-photo.jpg" alt="фото профиля" class="profile-head__avatar">
         <div class="profile-head__info">
           <h1 class="profile-head__title">Walter White</h1>
           <h2 class="profile-head__bio">Chemistry professor, teacher</h2>
-          <button type="button" aria-label="Редактировать" class="profile-head__edit-button profile-head__edit-button_open-popup"></button>
+          <button type="button" aria-label="Редактировать" class="profile-head__edit-button"></button>
         </div>
          <button type="button" aria-label="Добавить" class="profile-head__add-button"></button>
       </section>
-
       <section aria-label="Публикации профиля" class="profile-feed">
-        <ul class="profile-feed__list">
-          <li>
-            <article class="profile-feed__item">
-              <img src="./images/albuquerque.jpg" alt="Альбукерке" class="profile-feed__picture">
-              <div class="profile-feed__decription">
-                <h2 class="profile-feed__name">Albuquerque</h2>
-                <button type="button" aria-label="Лайк" class="profile-feed__like-button"></button>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="profile-feed__item">
-              <img src="./images/flask-with-liquid.jpg" alt="бутыль с жидкостью" class="profile-feed__picture">
-              <div class="profile-feed__decription">
-                <h2 class="profile-feed__name">On working</h2>
-                <button type="button" aria-label="Лайк" class="profile-feed__like-button"></button>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="profile-feed__item">
-              <img src="./images/boat.jpg" alt="катер" class="profile-feed__picture">
-              <div class="profile-feed__decription">
-                <h2 class="profile-feed__name">My merch</h2>
-                <button type="button" aria-label="Лайк" class="profile-feed__like-button"></button>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="profile-feed__item">
-              <img src="./images/krystal.jpg" alt="кристал" class="profile-feed__picture">
-              <div class="profile-feed__decription">
-                <h2 class="profile-feed__name">New formula</h2>
-                <button type="button" aria-label="Лайк" class="profile-feed__like-button"></button>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="profile-feed__item">
-              <img src="./images/desert-road.jpg" alt="дорога в пустыне" class="profile-feed__picture">
-              <div class="profile-feed__decription">
-                <h2 class="profile-feed__name">On the way</h2>
-                <button type="button" aria-label="Лайк" class="profile-feed__like-button"></button>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="profile-feed__item">
-              <img src="./images/track-in-desert.jpg" alt="дом на колёсах в пустыне" class="profile-feed__picture">
-              <div class="profile-feed__decription">
-                <h2 class="profile-feed__name">Calm place</h2>
-                <button type="button" aria-label="Лайк" class="profile-feed__like-button"></button>
-              </div>
-            </article>
-          </li>
-        </ul>
+        <ul class="profile-feed__list"></ul>
       </section>
     </main>
-
     <footer class="footer">
       <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
     </footer>
 
-    <div class="popup">
+    <div class="popup popup_edit">
       <div class="popup__fade">
-        <button type="button" aria-label="Закрыть" class="popup__close"></button>
         <div class="popup__container">
+          <button type="button" aria-label="Закрыть" class="popup__close"></button>
           <h2 class="popup__title">Редактировать профиль</h2>
           <form class="popup__form">
-            <input type="text" value="" class="popup__input popup__input-name">
-            <input type="text" value="" class="popup__input popup__input-bio">
+            <input type="text" value="" placeholder="Имя профиля" class="popup__input popup__input-name" required>
+            <input type="text" value="" placeholder="Биография" class="popup__input popup__input-bio" required>
             <button type="submit" aria-label="Сохранить" class="popup__save-button">Сохранить</button>
           </form>
         </div>
       </div>
     </div>
 
+    <div class="popup popup_add">
+      <div class="popup__fade">
+        <div class="popup__container">
+          <button type="button" aria-label="Закрыть" class="popup__close"></button>
+          <h2 class="popup__title">Новое место</h2>
+          <form class="popup__form">
+            <input type="text" value="" placeholder="Заголовок картинки" class="popup__input popup__input-title" required>
+            <input type="text" value="" placeholder="Ссылка на картинку" class="popup__input popup__input-link" required>
+            <button type="submit" aria-label="Создать" class="popup__save-button">Создать</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup_open">
+      <div class="popup__fade">
+        <div class="popup__figure-container">
+          <button type="button" aria-label="Закрыть" class="popup__close popup__close-image"></button>
+          <img class="popup__image" alt="открытое фото">
+          <p class="popup__image-title"></p>
+        </div>
+      </div>
+    </div>
+
+    <template class="template">
+      <li class="card-item">
+        <article class="profile-feed__item">
+          <img class="profile-feed__picture" alt="">
+          <button type="button" aria-label="Удалить" class="profile-feed__trash-button"></button>
+          <div class="profile-feed__decription">
+            <h2 class="profile-feed__name"></h2>
+            <button type="button" aria-label="Лайк" class="profile-feed__like-button"></button>
+          </div>
+        </article>
+      </li>
+    </template>
+
+    <script src="./scripts/cards.js"></script>
     <script src="./scripts/index.js"></script>
+
   </body>
 </html>
 
