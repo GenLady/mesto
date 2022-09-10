@@ -1,4 +1,5 @@
 .profile-feed__item {
   display: flex;
+  position: relative;
   flex-direction: column;
 }

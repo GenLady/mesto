@@ -1,0 +1,6 @@
+.popup__close-image {
+  place-self: end;
+  margin-bottom: 8px;
+  margin-right: -41px;
+  position: unset;
+}
