@@ -21,53 +21,74 @@ const closeButtons = document.querySelectorAll('.popup__close');
 const feedList = document.querySelector('.profile-feed__list');
 const cardTemplate = document.querySelector('.template').content;
 
+const popups = document.querySelectorAll('.popup');
+const saveButton = document.querySelector('.popup__save-button',);
+
 //ОТКРЫТИЕ-ЗАКРЫТИЕ ПОПАП
 function openPopup(popup) {
   popup.classList.add('popup_opened');
-}
+  document.addEventListener('keydown', closeBtnEscape);
+};
 
 function closePopup(popup) {
   popup.classList.remove('popup_opened');
-}
+  document.removeEventListener('keydown', closeBtnEscape);
+};
+
+//ЗАКРЫТИЕ ПОПАП КНОПОЙ ESC
+function closeBtnEscape(evt) {
+  if (evt.key === "Escape") {
+    const openedPopup = document.querySelector('.popup_opened');
+    closePopup(openedPopup);
+  }
+};
+
+//ЗАКРЫТИЕ ПОПАП ПО СВОБОДНОМУ ПОЛЮ
+popups.forEach((popup) => {
+  popup.addEventListener('mousedown', (evt) => {
+    if (evt.target.classList.contains('popup__fade')) {
+      closePopup(popup);
+    }
+  })
+});
 
 //ФОРМА EDIT ПРИ ОТКРЫТИИ
 function openProfileEditPopup() {
   nameInput.value = currentName.textContent;
   bioInput.value = currentBio.textContent;
+  removeDisabledBtnState(saveButton, validationConfig)
   openPopup(popupEdit);
-}
+};
 
 //ФУНКЦИЯ ПЕРЕЗАПИСИ EDIT
 function submitFormEditHandler(evt) {
   evt.preventDefault();
-
   currentName.textContent = nameInput.value;
   currentBio.textContent = bioInput.value;
   closePopup(popupEdit);
-}
+};
 
 //ФОРМА ADD ПРИ ОТКРЫТИИ
 function openProfileAddPopup() {
   titleInput.value = '';
   linkInput.value = '';
   openPopup(popupAdd);
-}
+};
 
 //ФУНКЦИЯ СОЗДАНИЯ НОВОЙ ФОТОГРАФИИ
 function submitFormAddHandler(evt) {
   evt.preventDefault();
-
   const titleInputValue = titleInput.value;
   const linkInputValue = linkInput.value;
   addCard(titleInputValue, linkInputValue);
   closePopup(popupAdd);
-}
+};
 
 //ДОБАВЛЕНИЕ ФОТОГРАФИИ В НАЧАЛО
 function addCard(text, link) {
   const newCard = printCard(text, link);
   feedList.prepend(newCard);
-}
+};
 
 //РАБОТА КАРТИНКИ В МОДАЛЬНОМ ОКНЕ
 function openImageHandler(src, text) {
@@ -75,14 +96,14 @@ function openImageHandler(src, text) {
   popupOpenImage.src = src;
   popupOpenImage.alt = text;
   popupOpenTitle.textContent = text;
-}
+};
 
 //СОЗДАНИЕ ТЕКУЩЕЙ ЛЕНТЫ ФОТОГРАФИЙ
 function createCurrentCards() {
   initialCards.forEach((e) => {
     addCard(e.name, e.link);
   });
-}
+};
 createCurrentCards();
 
 //РАБОТА КАРТОЧЕК С ФОТОГРАФИЯМИ
@@ -107,7 +128,7 @@ function printCard(text, link) {
     openImageHandler(image.src, imageTitle.textContent)
   );
   return cardElement;
-}
+};
 
 // РАБОТА КНОПКИ CLOSE
 closeButtons.forEach((button) => {
