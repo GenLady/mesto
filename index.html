@@ -39,9 +39,9 @@
           <button type="button" aria-label="Закрыть" class="popup__close"></button>
           <h2 class="popup__title">Редактировать профиль</h2>
           <form class="popup__form" novalidate>
-            <input type="text" id="username" value="" placeholder="Имя профиля" class="popup__input popup__input-name" minlength="2" minlength="40" required>
+            <input type="text" id="username" value="" placeholder="Имя профиля" class="popup__input popup__input-name" minlength="2" maxlength="40" required>
             <span id="username-error" class="popup__error"></span>
-            <input type="text" id="bio" value="" placeholder="Биография" class="popup__input popup__input-bio" minlength="2" minlength="200" required>
+            <input type="text" id="bio" value="" placeholder="Биография" class="popup__input popup__input-bio" minlength="2" maxlength="200" required>
             <span id="bio-error" class="popup__error"></span>
             <button type="submit" aria-label="Сохранить" class="popup__save-button">Сохранить</button>
           </form>
@@ -55,7 +55,7 @@
           <button type="button" aria-label="Закрыть" class="popup__close"></button>
           <h2 class="popup__title">Новое место</h2>
           <form class="popup__form" novalidate>
-            <input type="text" id="title" value="" placeholder="Заголовок картинки" class="popup__input popup__input-title" minlength="2" minlength="30" required>
+            <input type="text" id="title" value="" placeholder="Заголовок картинки" class="popup__input popup__input-title" minlength="2" maxlength="30" required>
             <span id="title-error" class="popup__error"></span>
             <input type="url" id="link" value="" placeholder="Ссылка на картинку" class="popup__input popup__input-link" required>
             <span id="link-error" class="popup__error"></span>
