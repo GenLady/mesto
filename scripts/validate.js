@@ -7,21 +7,20 @@ const validationConfig = {
   errorClass: 'popup__error_visible'
 };
 
-//ПОЛУЧЕНИЕ ФОРМЫ
+/** Получение формы */
 function enableValidation(config) {
   const forms = Array.from(document.querySelectorAll(config.formSelector));
   forms.forEach((form) => {
     form.addEventListener('submit', (evt) => {
-    evt.preventDefault();
-  })
+      evt.preventDefault();
+    })
     setHandlers(form, config);
   })
 };
 
-//ОБРАБОТЧИК ФОРМЫ
+/** Обработчик формы */
 function setHandlers(form, config) {
   const inputs = Array.from(form.querySelectorAll(config.inputSelector));
-  console.log(inputs);
   const button = form.querySelector(config.submitBtnSelector);
   toggleBtnState(inputs, button, config);
   inputs.forEach((input) => {
@@ -32,12 +31,11 @@ function setHandlers(form, config) {
   })
 };
 
-//ВАЛИДАЦИЯ ИНПУТОВ
+/** Валидация инпутов */
 function validateInput(form, input, config) {
   const error = form.querySelector(`#${input.id}-error`);
   if (!input.validity.valid) {
     input.classList.add(config.inputErrorClass);
-    //error.classList.add(config.errorClass);
     error.textContent = input.validationMessage;
   }
   else {
@@ -47,7 +45,7 @@ function validateInput(form, input, config) {
   }
 };
 
-//ИЗМЕНЕНИЕ СТАТУСА КНОПКИ ФОРМЫ
+/** Изменение статуса кнопки формы */
 function toggleBtnState(inputs, button, config) {
   if (hasInvalidInput(inputs)) {
     addDisabledBtnState(button, config);
@@ -57,12 +55,12 @@ function toggleBtnState(inputs, button, config) {
   }
 };
 
-//ПРОВЕРКА ФОРМЫ НА ВАЛИДНОСТЬ
-function hasInvalidInput(inputs){
-  return (inputs.some((input)=>!input.validity.valid));
+/** Проверка формы на валидность*/
+function hasInvalidInput(inputs) {
+  return (inputs.some((input) => !input.validity.valid));
 };
 
-//АКТИВАЦИЯ И ДЕАКТИВАЦИЯ КНОПКИ ФОРМЫ
+/** Активация-деактивация кнопки формы */
 function removeDisabledBtnState(button, config) {
   button.classList.remove(config.inactiveBtnClass);
   button.removeAttribute('disabled', false);

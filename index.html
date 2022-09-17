@@ -33,7 +33,7 @@
       <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
     </footer>
 
-    <div class="popup popup_edit">
+    <div class="popup popup_type_edit">
       <div class="popup__fade">
         <div class="popup__container">
           <button type="button" aria-label="Закрыть" class="popup__close"></button>
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <div class="popup popup_add">
+    <div class="popup popup_type_add">
       <div class="popup__fade">
         <div class="popup__container">
           <button type="button" aria-label="Закрыть" class="popup__close"></button>
@@ -59,14 +59,14 @@
             <span id="title-error" class="popup__error"></span>
             <input type="url" id="link" value="" placeholder="Ссылка на картинку" class="popup__input popup__input-link" required>
             <span id="link-error" class="popup__error"></span>
-            <button type="submit" aria-label="Создать" class="popup__save-button popup__save-button_disabled">Создать</button>
+            <button type="submit" aria-label="Создать" class="popup__save-button">Создать</button>
           </form>
         </div>
       </div>
     </div>
 
     <div class="popup popup_open">
-      <div class="popup__fade">
+      <div class="popup__fade popup__fade_type_image">
         <div class="popup__figure-container">
           <button type="button" aria-label="Закрыть" class="popup__close popup__close-image"></button>
           <img class="popup__image" alt="открытое фото">
